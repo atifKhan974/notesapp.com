@@ -1,0 +1,199 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color:rgb(46, 162, 245);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    font-family: sans-serif;
+    overflow: hidden;
+}
+
+.container{
+    background-color: white;
+    border-radius: 5px ;
+    box-shadow: 0 2px 5px gray;
+    width: 400px;
+    max-width: 90%;
+    overflow: hidden;
+    position: relative;
+    top: -650px;
+    transition: all 0.5s ease ;
+}
+
+.header{
+    background-color: #f7f7f7;
+    border-bottom: 1px solid gainsboro;
+    padding: 20px 40px;
+}
+
+h2{
+    text-align: center;
+    margin: 0;
+}
+
+.form{
+    padding: 30px 40px;
+}
+
+.form-control{
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+.form-control label{
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.form-control input{
+    border: 2px solid #f0f0f0;
+    width: 100%;
+    font-size: 14px;
+    font-family: inherit;
+    border-radius: 4px;
+    padding: 10px;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.form-control.success input{
+    border-color: green;
+}
+.form-control.error input{
+    border-color: red;
+    animation: shake 80ms ease 5 alternate;
+}
+@keyframes shake {
+    from{
+        left: -3px;
+    }
+    to{
+        left: 3px;
+    }
+}
+
+.form-control i{
+    visibility: hidden;
+    position: absolute;
+    top: 35px;
+    right: 10px;
+}
+
+.form-control.success i.fa-circle-check{
+    visibility: visible;
+    color: green;
+}
+.form-control.error i.fa-circle-info{
+    visibility: visible;
+    color: red;
+}
+
+.form-control small{
+    visibility: hidden;
+    position: absolute;
+    bottom: 0;
+    left: 2px;
+}
+
+.form-control.error small{
+    visibility: visible;
+    color: red;
+}
+
+.form button{
+    display: block;
+    width: 100%;
+    background-color: rgb(46, 162, 245);
+    border: 2px solid rgb(46, 162, 245);
+    color: #fff;
+    padding: 10px;
+    font-size: 18px;
+    font-family: inherit;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.form button:active{
+    transform: translateY(-1px);
+}
+
+.form-control .accInfo{
+    position: absolute;
+    margin: 0;
+    text-align: right;
+    top: 0;
+    right: 0;
+}
+.form-control .accInfo a{
+    text-decoration: none;
+    color: rgb(46, 162, 245);
+    font-weight: 600;
+    font-style: italic;
+}
+.form-control .accInfo a:hover{
+    text-decoration: underline;
+}
+
+.successMsg{
+    display: none;
+    background-color: white;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgb(85, 84, 84);
+    max-height: 100%;
+    transition: all 0.5s ease ;
+    position: relative;
+    top: -20px;
+}
+
+.successMsg .header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.successMsg .header h2{
+    color: green;
+}
+
+.successMsg .header i{
+    color: green;
+    font-size: 48px;
+    margin: 8px 0;
+}
+
+.successMsg .content{
+    padding: 10px 16px;
+}
+
+.successMsg .content p{
+    font-family: inherit;
+    font-size: 16px;
+}
+
+.successMsg a {
+    text-decoration: none;
+}
+
+#okBtn {
+    display: block;
+    margin: 8px auto;
+    margin-top: 0px;
+    width: 50%;
+    background-color: rgb(46, 162, 245);
+    border: 2px solid rgb(46, 162, 245);
+    color: #fff;
+    padding: 10px;
+    font-size: 18px;
+    font-family: inherit;
+    border-radius: 4px;
+    cursor: pointer;
+}

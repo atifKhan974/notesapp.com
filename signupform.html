@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up Form</title>
+    <link rel="stylesheet" href="signUpstyle.css">
+    <script src="https://kit.fontawesome.com/08bfb080f0.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/x-icon" href="notesIcon.ico">
+
+</head>
+
+<body>
+    <div class="container" id="container">
+        <div class="header">
+            <h2>Create Account</h2>
+        </div>
+        <form class="form" id="form">
+            <div class="form-control">
+                <label>Username</label>
+                <input type="text" placeholder="Username" id="username">
+                <i class="fa-solid fa-circle-check"></i>
+                <i class="fa-solid fa-circle-info"></i>
+                <small>Message</small>
+            </div>
+
+            <div class="form-control">
+                <label>Email</label>
+                <input type="email" placeholder="abc123@gmail.com" id="email">
+                <i class="fa-solid fa-circle-check"></i>
+                <i class="fa-solid fa-circle-info"></i>
+                <small>Message</small>
+            </div>
+
+            <div class="form-control">
+                <label>Password</label>
+                <input type="password" placeholder="Password" id="password">
+                <i class="fa-solid fa-circle-check"></i>
+                <i class="fa-solid fa-circle-info"></i>
+                <small>Message</small>
+            </div>
+
+            <div class="form-control">
+                <label>Confirm Password</label>
+                <input type="password" placeholder="Confirm Password" id="confirmPassword">
+                <i class="fa-solid fa-circle-check"></i>
+                <i class="fa-solid fa-circle-info"></i>
+                <small>Message</small>
+            </div>
+
+            <button>Submit</button>
+            <!-- <small class="footer">muhammadatif974.edu.pk@gmail.com</small> -->
+        </form>
+    </div>
+
+    <div class="successMsg" id="successMsg">
+        <div class="header">
+            <i class="fa-solid fa-circle-check"></i>
+            <h2>SignUp Successfull</h2>
+        </div>
+        <div class="content">
+            <p>Your Account has been created successfully</p>
+        </div>
+        <a href="">
+            <button id="okBtn">Ok</button>
+        </a>
+    </div>
+    <script src="signUpscript.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login to Notes App</title>
+    <link rel="stylesheet" href="loginStyle.css">
+    <link rel="icon" type="image/x-icon" href="notesIcon.ico">
+</head>
+
+<body>
+    <div class="container" id="container">
+        <div class="header">
+            <h2>Login to your Account</h2>
+        </div>
+        <form class="form" id="form">
+
+            <div class="form-control">
+                <label>Email</label>
+                <input type="email" placeholder="abc123@gmail.com" id="email">
+                <i class="fa-solid fa-circle-check"></i>
+                <i class="fa-solid fa-circle-info"></i>
+                <small>Message</small>
+            </div>
+
+            <div class="form-control">
+                <label>Password</label>
+                <input type="password" placeholder="Password" id="password">
+                <i class="fa-solid fa-circle-check"></i>
+                <i class="fa-solid fa-circle-info"></i>
+                <small>Message</small>
+            </div>
+
+            <div class="form-control">
+                <p class="accInfo">Not have account <a id="signUpLink" href="signupform.html">Sign up</a></p>
+            </div>
+            <button>Login</button>
+        </form>
+    </div>
+
+    <div class="successMsg" id="successMsg">
+        <div class="header">
+            <i class="fa-solid fa-circle-check"></i>
+            <h2>Login Successfull</h2>
+        </div>
+        <div class="content">
+            <p>You have logged in successfully</p>
+        </div>
+        <a href="">
+            <button id="okBtn">Ok</button>
+        </a>
+    </div>
+
+    <script src="loginScript.js"></script>
+</body>
+
+</html>
